@@ -1,16 +1,18 @@
 # rmw-sem5-proj
 
 ## Installation
-After cloning the repo run the following commands as necessary.
-``` npm install ```
+This project requires the **hypernode** docker container, simply clone the repo into the ``` fhooe-hypernode-dock\node ``` directory.\
+After cloning the repo run the following commands as necessary.\
+``` npm install ```\
 ``` npm install react-router-dom ```
 
-### Running Locally
-Start the Server
-``` npm run dev -- --host ```
+### Docker Commands 
+``` docker compose up -d ```\
+``` docker exec -it hypernode /bin/bash ```
 
-Navigate to:
-``` http://localhost:5555 ```
+### Running Locally
+Start the Server: ``` npm run dev -- --host ```\
+Navigate to: http://localhost:5555
 
 
 ## Folder Structure
