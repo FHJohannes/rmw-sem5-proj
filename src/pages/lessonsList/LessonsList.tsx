@@ -1,4 +1,4 @@
-import './lessonsList.css'
+import './lessonsList.module.css'
 
 export function LessonsList() {
 

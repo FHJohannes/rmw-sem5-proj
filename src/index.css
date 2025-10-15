@@ -66,3 +66,8 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+/* This is more or less temporary to test/showcase the auto-scrolling in the Landing Page */
+section{
+  padding: 25px 0;
+}
