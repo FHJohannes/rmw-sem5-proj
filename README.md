@@ -4,11 +4,11 @@
 This project requires the **hypernode** docker container, simply clone the repo into the ``` fhooe-hypernode-dock\node ``` directory.\
 After cloning the repo run the following commands as necessary.\
 ``` npm install ```\
-``` npm install react-router-dom ```
+``` npm install react-router-dom ```(this is not necessary i think)
 
 ### Docker Commands 
 ``` docker compose up -d ```\
-``` docker exec -it hypernode /bin/bash ```(this is not necessary i think)
+``` docker exec -it hypernode /bin/bash ```
 
 ### Running Locally
 Start the Server: ``` npm run dev -- --host ```\
