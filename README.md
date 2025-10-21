@@ -8,7 +8,7 @@ After cloning the repo run the following commands as necessary.\
 
 ### Docker Commands 
 ``` docker compose up -d ```\
-``` docker exec -it hypernode /bin/bash ```
+``` docker exec -it hypernode /bin/bash ```(this is not necessary i think)
 
 ### Running Locally
 Start the Server: ``` npm run dev -- --host ```\
