@@ -1,0 +1,7 @@
+.welcomeSection{
+    height: 80vh;
+
+    & p{
+        width: 60%;
+    }
+}

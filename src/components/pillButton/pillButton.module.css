@@ -1,0 +1,15 @@
+.pillButtonBody{
+    background-color: #D9D9D9;
+    color: var(--font-color);
+    border-radius: 25px;
+    padding: 11px 9px 11px 25px;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    &:hover{
+        background-color: #757575;
+        color: white;
+    }
+}
