@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+
+:root {
+    --font-main: 'Lexend', sans-serif;
+    --font-heading: 'Gasoek One', sans-serif;
+
+    --size-h1: 64px;
+    --size-h2: 24px;
+    --size-strong: 20px;
+    --size-p: 16px;
+
+    --font-color: black;
+}
