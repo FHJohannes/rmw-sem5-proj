@@ -1,0 +1,32 @@
+.tilesContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+    
+}
+
+.tileBody{
+    box-sizing: border-box;
+    flex: 1 1 calc(50% - 16px); /* two per row, accounting for gap */
+    background: lightgray;
+    display: flex;
+    flex-direction: row;
+    padding: 12px;
+    border-radius: 20px;
+    & div {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        & a {
+            display: flex;
+            align-items: center;
+        }
+    }
+    & img{
+        height: 200px;
+        border-radius: 15px;
+    }
+}

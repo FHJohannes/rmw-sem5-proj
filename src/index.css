@@ -32,11 +32,15 @@ h1{
 }
 h2{
   font-size: var(--size-h2);
+  margin: 35px;
 }
 em{
   font-size: var(--size-em);
   font-style: normal;
   font-weight: bold;
+}
+p{
+  margin: 0;
 }
 
 

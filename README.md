@@ -54,6 +54,7 @@ src/
 ├── App.css                     # Used for styles that apply only to the react app but not to the whole page
 ├── App.tsx                     # Layout component including Navbar and Outlet
 ├── main.tsx                    # Entry point mounting React to DOM, contains RouterProvider
+├── variables.css               # All style variables are collected here
 └── index.css                   # Global styles
 ```
 

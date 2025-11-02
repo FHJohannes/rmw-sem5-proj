@@ -5,7 +5,8 @@ import { Welcome } from 'src/components/welcome/Welcome.tsx';
 import { TextSection } from 'src/components/textSection/TextSection.tsx';
 import { RulesTextSection } from 'src/components/rulesTextSection/RulesTextSection.tsx';
 import { Tiles } from 'src/components/tiles/Tiles.tsx';
-
+import { previewLessons } from './previewLessons.tsx'
+ 
 interface Props {
     anchor?: string;
 }
@@ -34,7 +35,7 @@ export function LandingPage({ anchor }:Props) {
                 <RulesTextSection />
             </Element>
             <Element name="tiles">
-                <Tiles />
+                <Tiles content={previewLessons}/>
             </Element>
             <Element name="summary">
                 <TextSection title='Zusammenfassung oder so' text='This is Zusammenfassung oder so'/>
