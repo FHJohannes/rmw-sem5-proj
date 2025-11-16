@@ -87,3 +87,42 @@
   transform: translateY(-6px);
   cursor: pointer;
 }
+
+.drawnTile {
+  padding-left: 15px;
+}
+
+
+.winButton {
+    background-color: #2ecc71;
+    color: #ffffff;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 0.4rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.winButton:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.resetButton {
+    background-color: #b5b5b5;
+    color: #333333;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 0.4rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.resetButton:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
