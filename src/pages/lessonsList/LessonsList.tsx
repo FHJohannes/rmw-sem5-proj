@@ -1,10 +1,12 @@
-import './lessonsList.module.css'
+import styles from './lessonsList.module.css'
+import { LessonTiles } from 'src/components/lessonTiles/lessonTiles'
+import { previewLessons2 } from './lessonsText'
 
 export function LessonsList() {
 
     return (
-        <>
-            <h1>Lessons</h1>
-        </>
+        <main>
+            <LessonTiles cards={previewLessons2}/>
+        </main>
     )
 }

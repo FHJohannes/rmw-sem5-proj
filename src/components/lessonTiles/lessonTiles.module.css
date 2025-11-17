@@ -1,0 +1,49 @@
+.lessonTilesContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 3vw;  
+}
+
+.initialContainer{
+    margin: 4.5vw 9.4vw 4.5vw 9.4vw
+}
+
+.initialContainer .pageTitle{
+    display: flex;
+}
+
+.initialContainer .pageP {
+    display: flex;
+    opacity: 0.5;
+}
+
+.lessonTileBody {
+    box-sizing: border-box;
+    background: lightgray;
+    display: flex;
+    flex-direction: row;
+    padding: 12px;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.lessonTileBody div {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} 
+
+.lessonTileBody a {
+    display: flex;
+    align-items: center;
+}
+
+.lessonTileBody img {
+    height: 200px;
+    border-radius: 15px;
+    margin-left: auto;
+}
