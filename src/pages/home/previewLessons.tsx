@@ -15,16 +15,16 @@ export const previewLessons: lessonCard[] = [
     {
         title: "Read Area",
         shortText: "Short Explanation Text, lorem ipsum dolor sit amet, sadipscing elitr",
-        img: "src/assets/tileImages/i_am_speed.PNG"
+        img: placeholderIMG
     },
     {
         title: "Play Area",
         shortText: "Short Explanation Text, lorem ipsum dolor sit amet, sadipscing elitr",
-        img: "src/assets/tileImages/i_am_speed.PNG"
+        img: placeholderIMG
     },
     {
         title: "Drag&Drop Area",
         shortText: "Short Explanation Text, lorem ipsum dolor sit amet, sadipscing elitr",
-        img: "src/assets/tileImages/i_am_speed.PNG"
+        img: placeholderIMG
     }
 ]
