@@ -19,7 +19,19 @@
     display: flex;
     opacity: 0.5;
 }
+.lessonTileBody .btnContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-right: 10%;
+}
+.btnContainer .btn{
+    width: 200px;
+}
 
+.lessonTileBody .cardText{
+    margin-right: 10%;
+}
 .lessonTileBody {
     box-sizing: border-box;
     background: lightgray;

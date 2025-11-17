@@ -15,13 +15,15 @@ export function LessonTiles({cards}: props) {
                     return(
                         <div className={styles.lessonTileBody}>
                             <div>
-                                <div>
+                                <div className = {styles.cardText}>
                                     <h3>{card.title}</h3>
                                     <p>{card.shortText}</p>
                                 </div>
-                                <button className = {styles.startBtn}>{card.startBtn}</button>
-                                <button className = {styles.watchBtn}>{card.watchBtn}</button>
-                                <button className = {styles.testBtn}>{card.testBtn}</button>
+                                <div className={styles.btnContainer}>
+                                    <button className = {styles.btn}>{card.startBtn}</button>
+                                    <button className = {styles.btn}>{card.watchBtn}</button>
+                                    <button className = {styles.btn}>{card.testBtn}</button>
+                                </div>
                             </div>
                             <img src = {card.img} alt = "Lesson Preview Image"/>
                         </div>
