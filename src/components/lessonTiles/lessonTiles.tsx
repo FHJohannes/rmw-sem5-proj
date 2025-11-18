@@ -25,7 +25,9 @@ export function LessonTiles({cards}: props) {
                                     <button className = {styles.btn}>{card.testBtn}</button>
                                 </div>
                             </div>
-                            <img src = {card.img} alt = "Lesson Preview Image"/>
+                            <div className = {styles.picContainer}>
+                                <img src = {card.img} alt = "Lesson Preview Image"/>
+                            </div>
                         </div>
                     )
                 })}
