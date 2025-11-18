@@ -1,0 +1,26 @@
+@import '../../variables.css';
+
+.RulesTextSection{
+    background-color:  var(--bg-light-gray);
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-direction: row;
+    & div {
+        height: 400px;
+        padding: 20px 0;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        box-sizing: border-box;
+        & h2{
+            margin: 0;
+        }
+    }
+    & img{
+        height: 400px;
+        border-radius: 15px;
+    }
+}

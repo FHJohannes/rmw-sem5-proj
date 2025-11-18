@@ -9,9 +9,9 @@
 
 .tileBody{
     box-sizing: border-box;
-    flex: 1 1 calc(50% - 16px); /* two per row, accounting for gap */
     background: lightgray;
     display: flex;
+    flex: 1 1 calc(50% - 16px); /* two per row, accounting for gap */
     flex-direction: row;
     padding: 12px;
     border-radius: 20px;
@@ -23,6 +23,10 @@
         & a {
             display: flex;
             align-items: center;
+            & svg {
+                height: 24px;
+                width: 24px;
+            }
         }
     }
     & img{
