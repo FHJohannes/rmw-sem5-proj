@@ -1,4 +1,4 @@
-import './textSection.module.css'
+import styles from './textSection.module.css'
 
 interface Props{
     title?: string;
@@ -7,7 +7,7 @@ interface Props{
 
 export function TextSection({ title, text }: Props) {
     return (
-        <section>
+        <section className={styles.textSection}>
             <h2>{ title }</h2>
             <p>{ text }</p>
         </section>
