@@ -1,0 +1,128 @@
+/* General layout */
+.container {
+  min-height: 100vh;
+  background: #0b5f2b; /* green felt */
+  color: #ffffff;
+  padding: 24px;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* Table area layout */
+.tableArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* Section titles */
+.sectionTitle {
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  color: #f2f2f2;
+  margin-bottom: 4px;
+}
+
+/* Discard area styling */
+.discardSection {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.discardRow {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.discardTile {
+  width: 44px;
+  height: 62px;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* Player hand section styling */
+.handSection {
+  text-align: center;
+  padding-top: 8px;
+  border-top: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.handRow {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.handTile {
+  width: 52px;
+  height: 74px;
+  object-fit: contain;
+  background: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.handTile:hover {
+  transform: translateY(-6px);
+  cursor: pointer;
+}
+
+.drawnTile {
+  padding-left: 15px;
+}
+
+
+.winButton {
+    background-color: #2ecc71;
+    color: #ffffff;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 0.4rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.winButton:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.resetButton {
+    background-color: #b5b5b5;
+    color: #333333;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 0.4rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.resetButton:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}

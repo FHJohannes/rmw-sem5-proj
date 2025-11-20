@@ -1,4 +1,4 @@
-import placeholderIMG from 'src/assets/tileImages/i_am_speed.png';
+import placeholderIMG from 'src/assets/images/i_am_speed.png';
 
 export interface lessonCard{
     title: string;

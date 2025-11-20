@@ -13,6 +13,8 @@ interface Props {
 
 export function LandingPage({ anchor }:Props) {
 
+    const placeholder = "Lorem ipsum brizzle for sure amet, shiz adipiscing fo shizzle mah nizzle fo rizzle, mah home g-dizzle. Nullizzle you son of a bizzle velizzle, dawg volutpizzle, suscipizzle bow wow wow, get down get down vizzle, arcu. Pellentesque eget tortizzle. Sed erizzle. Gizzle izzle dolor dapibizzle ma nizzle tempizzle tempizzle. Mauris break it down nibh izzle shizzlin dizzle. Nizzle izzle tortor. Its fo rizzle sizzle boofron ghetto. In ass mofo fo shizzle dictumst. Funky fresh dapibizzle. Phat tellus urna, gizzle boofron, mattizzle shizznit, gangsta vitae, nunc. Fo shizzle suscipizzle. Integizzle sempizzle the bizzle sizzle purus."
+
     useEffect(() => {
         if (anchor) {
             scroller.scrollTo(anchor, {
@@ -29,7 +31,7 @@ export function LandingPage({ anchor }:Props) {
                 <Welcome />
             </Element>
             <Element name="about">
-                <TextSection title='Mahjong' text='This is Mahjong'/>
+                <TextSection title='Mahjong' text={placeholder}/>
             </Element>
             <Element name="ShortRules">
                 <RulesTextSection />
@@ -38,7 +40,7 @@ export function LandingPage({ anchor }:Props) {
                 <Tiles content={previewLessons}/>
             </Element>
             <Element name="summary">
-                <TextSection title='Zusammenfassung oder so' text='This is Zusammenfassung oder so'/>
+                <TextSection title='Zusammenfassung oder so' text={placeholder}/>
             </Element>
         </main>
     )

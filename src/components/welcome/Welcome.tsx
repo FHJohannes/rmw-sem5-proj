@@ -7,7 +7,7 @@ export function Welcome() {
         <section className={styles.welcomeSection}>
             <h1>Willkommen!</h1>
             <p><em>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the</em></p>
-            <PillButton text="Start Studying"/>
+            <PillButton text="Start Studying" darkmode={true}/>
         </section>
     )
 }
