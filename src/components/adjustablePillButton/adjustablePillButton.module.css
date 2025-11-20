@@ -1,0 +1,33 @@
+.adjustablePillButtonBody{
+    border-radius: 25px;
+    padding: 11px 20px 11px 15px;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color .25s;
+    font-size: 130%;
+    font-family: var(--font-main)
+}
+
+.dark{
+    background-color: rgba(117, 117, 117, 1);
+    color: white;
+    &:hover{
+        background-color: #3b3b3b;
+        color: white;
+    }
+}
+
+.light{
+    background-color: white;
+    color: var(--font-color);
+    &:hover{
+        background-color: #757575;
+        color: white;
+    }
+}
+
+.icon{
+    font-size: 140%;
+}

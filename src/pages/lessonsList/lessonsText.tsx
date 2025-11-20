@@ -12,7 +12,7 @@ export interface lessonCard2{
 export const previewLessons2: lessonCard2[] = [
     {
         title: "Lesson 1",
-        shortText: "In this lesson you will learn about the different tiles, their suits and names",
+        shortText: "In this lesson you will learn about the different tiles, their suits and names.",
         img: placeholderIMG,
         startBtn: "Start Learning",
         watchBtn: "Watch Video",
@@ -21,7 +21,7 @@ export const previewLessons2: lessonCard2[] = [
     },
     {
         title: "Lesson 2",
-        shortText: "Here you will learn more about your playing Hand and how to form it into a winning hand",
+        shortText: "Here you will learn more about your playing Hand and how to form it into a winning hand.",
         img: "src/assets/tileImages/lessonTilesCard.jpg",
         startBtn: "Start Learning",
         watchBtn: "Watch Video",
@@ -37,7 +37,7 @@ export const previewLessons2: lessonCard2[] = [
     },
     {
         title: "Lesson 4",
-        shortText: "Here you will learn about the gameplay element called 'Dora'. As well as its closely connected friend, the Dead Wall",
+        shortText: "Here you will learn about the gameplay element called 'Dora'. As well as its closely connected friend, the Dead Wall.",
         img: "src/assets/tileImages/lessonTilesCard.jpg",
         startBtn: "Start Learning",
         watchBtn: "Watch Video",
