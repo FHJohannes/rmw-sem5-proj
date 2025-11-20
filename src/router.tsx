@@ -2,7 +2,8 @@ import { createBrowserRouter } from "react-router-dom";
 import { LandingPage } from "./pages/home/LandingPage.tsx";
 import { LessonsList } from "./pages/lessonsList/LessonsList.tsx";
 import { Rules } from "./pages/rules/Rules.tsx";
-import { App } from './App.tsx'
+import { Play } from "./pages/play/Play.tsx";
+import { App } from './App.tsx';
 
 
 export const router = createBrowserRouter([
@@ -23,6 +24,7 @@ export const router = createBrowserRouter([
                 // children: [ { path: "/", element: <LandingPage /> } ], will be used for individual lessons
             },
             {path: "/rules", element: <Rules/>},
+            {path: "/play", element: <Play/>},
         ],
     },
 ])
