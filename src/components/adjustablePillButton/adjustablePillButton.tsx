@@ -3,14 +3,14 @@ import styles from './adjustablePillButton.module.css'
 interface props{
     text: string;
     darkmode: boolean;
-    icon: React.ElementType;
+    icon: string;
 }
 
-export function AdjustablePillButton({text, darkmode, icon: Icon}: props) {
+export function AdjustablePillButton({text, darkmode, icon}: props) {
     const modeClass = darkmode ? styles.dark : styles.light;
      return (
         <button className={[styles.adjustablePillButtonBody, modeClass].join(" ")}>
-            <Icon className={styles.icon}/>
+            <img src = {icon} alt = '' className={styles.icon}></img>
             {text}
         </button>
     );
