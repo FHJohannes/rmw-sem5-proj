@@ -2,3 +2,19 @@
     padding-top: 60px;
     padding-bottom: 110px;
 }
+
+.left{
+    & *{
+        text-align: left;
+    }
+}
+.right{
+    & *{
+        text-align: right;
+    }
+}
+.center{
+    & *{
+        text-align: center;
+    }
+}

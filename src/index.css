@@ -34,6 +34,12 @@ h2{
   font-size: var(--size-h2);
   margin: 35px;
 }
+h3{
+  font-size: var(--size-h3);
+}
+h4{
+  font-size: var(--size-h4);
+}
 em{
   font-size: var(--size-em);
   font-style: normal;
@@ -41,10 +47,8 @@ em{
 }
 p{
   margin: 0;
+  font-size: var(--size-standard);
 }
-
-
-/* This is more or less temporary to test/showcase the auto-scrolling in the Landing Page */
 section{
   padding: 25px 8vw;
   display: flex;

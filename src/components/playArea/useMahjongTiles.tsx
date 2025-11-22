@@ -1,3 +1,5 @@
+import type { ReactElement } from "react";
+
 export type TileSuit = "Man" | "Pin" | "Sou" | "honor";
 export type HonorType = "wind" | "dragon";
 
@@ -67,4 +69,96 @@ export const useMahjongTiles = (): MahjongTile[] => {
   });
 
   return tiles;
+};
+
+/**
+ * Retrieve a subset of Mahjong tiles by their names.
+ * Names must match the `name` field of MahjongTile.
+ */
+export const useTilesByName = (codes: string[]): MahjongTile[] => {
+  return codes.map((code, index) => {
+    //
+    // Suited tiles: Man1–Man9, Pin1–Pin9, Sou1–Sou9
+    //
+    const suitedMatch = code.match(/^(Man|Pin|Sou)([1-9])$/);
+    if (suitedMatch) {
+      const suit = suitedMatch[1] as TileSuit;
+      const value = Number(suitedMatch[2]);
+
+      return {
+        id: `${suit}-${value}-${index}`,
+        suit,
+        value,
+        name: `${value} of ${suit}`,
+        image: `src/assets/riichi-mahjong-tiles/${suit}${value}.svg`,
+      };
+    }
+
+    //
+    // Winds: Ton, Nan, Shaa, Pei
+    //
+    const winds = ["Ton", "Nan", "Shaa", "Pei"] as const;
+    if (winds.includes(code as any)) {
+      return {
+        id: `wind-${code}-${index}`,
+        suit: "honor",
+        value: null,
+        honorType: "wind",
+        name: `${code} Wind`,
+        image: `src/assets/riichi-mahjong-tiles/${code}.svg`,
+      };
+    }
+
+    //
+    // Dragons: Haku, Hatsu, Chun
+    //
+    const dragons = ["Haku", "Hatsu", "Chun"] as const;
+    if (dragons.includes(code as any)) {
+      return {
+        id: `dragon-${code}-${index}`,
+        suit: "honor",
+        value: null,
+        honorType: "dragon",
+        name: `${code} Dragon`,
+        image: `src/assets/riichi-mahjong-tiles/${code}.svg`,
+      };
+    }
+
+    //
+    // No matching format -> fail explicitly
+    //
+    throw new Error(`Invalid tile code: ${code}`);
+  });
+};
+
+export const useDisplayTiles = (tiles: MahjongTile[]): ReactElement => {
+  const wrapperStyle: React.CSSProperties = {
+    display: "flex",
+    flexDirection: "row",
+    gap: "15px",
+    // flexWrap: "wrap",
+  }
+  
+  const tileStyle: React.CSSProperties = {
+    width: "103px",
+    height: "150px",
+    objectFit: "contain",
+    background: "#ffffff",
+    borderRadius: "6px",
+    boxShadow: "0 2px 5px rgba(0, 0, 0, 0.4)",
+  };
+
+  return (
+    <div style={wrapperStyle}>
+      {tiles.map((tile) => (
+        <img
+            key={tile.id}
+            src={tile.image}
+            alt={tile.name}
+            style={tileStyle}
+            draggable={false}
+        />
+      ))}
+    </div>
+  )
 };

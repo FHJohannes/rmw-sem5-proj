@@ -31,7 +31,7 @@ export function LandingPage({ anchor }:Props) {
                 <Welcome />
             </Element>
             <Element name="about">
-                <TextSection title='Mahjong' text={placeholder}/>
+                <TextSection title='Mahjong' text={placeholder} align='center'/>
             </Element>
             <Element name="ShortRules">
                 <RulesTextSection />
@@ -40,7 +40,7 @@ export function LandingPage({ anchor }:Props) {
                 <Tiles content={previewLessons}/>
             </Element>
             <Element name="summary">
-                <TextSection title='Zusammenfassung oder so' text={placeholder}/>
+                <TextSection title='Zusammenfassung oder so' text={placeholder} align='center'/>
             </Element>
         </main>
     )

@@ -1,6 +1,6 @@
 import  styles from './rulesTextSection.module.css'
 import  { PillButton } from '../pillButton/pillButton.tsx'
-import placeholderIMG from 'src/assets/tileImages/i_am_speed.png';
+import placeholderIMG from 'src/assets/images/i_am_speed.png';
 
 
 export function RulesTextSection() {

@@ -1,0 +1,37 @@
+.iconButtonBody{
+    border-radius: 25px;
+    padding: 11px 25px;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color .25s;
+    & .text {
+        font-weight: 600;
+        font-size: 18px;
+    }
+    & .icon { 
+        & > *{
+            width: 25px;
+            height: 25px;
+        }
+    }
+}
+
+.dark{
+    background-color: #757575;
+    color: white;
+    &:hover{
+        background-color: #D9D9D9;
+        color: white;
+    }
+}
+
+.light{
+    background-color: white;
+    color: var(--font-color);
+    &:hover{
+        background-color: #757575;
+        color: white;
+    }
+}
