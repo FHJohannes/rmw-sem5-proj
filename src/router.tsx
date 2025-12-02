@@ -4,6 +4,7 @@ import { LessonsList } from "./pages/lessonsList/LessonsList.tsx";
 import { Rules } from "./pages/rules/Rules.tsx";
 import { Play } from "./pages/play/Play.tsx";
 import { App } from './App.tsx';
+import { VideoPage } from "./pages/videoPages/videoPage.tsx";
 
 
 export const router = createBrowserRouter([
@@ -23,6 +24,7 @@ export const router = createBrowserRouter([
                 element: <LessonsList/>,
                 // children: [ { path: "/", element: <LandingPage /> } ], will be used for individual lessons
             },
+            {path: "/lessons/videos/:id", element: <VideoPage/>},
             {path: "/rules", element: <Rules/>},
             {path: "/play", element: <Play/>},
         ],

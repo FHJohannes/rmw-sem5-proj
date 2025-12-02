@@ -17,7 +17,7 @@
 
 .initialContainer .pageP {
     display: flex;
-    opacity: 0.5;
+    color: #757575;
 }
 
 .initialContainer .cardText{
@@ -44,7 +44,7 @@
 }
 
 p{
-    font-size: 130%;
+    font-size: 120%;
 }
 
 h2{

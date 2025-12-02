@@ -4,6 +4,8 @@ import type { lessonCard2 } from "src/pages/lessonsList/lessonsText";
 import book_icon from 'src/assets/icons/Book_open.png';
 import camera_icon from 'src/assets/icons/Video.png';
 import quiz_icon from 'src/assets/icons/quiz.png';
+import { useNavigate } from "react-router-dom";
+
 
 
 interface props {
@@ -11,6 +13,8 @@ interface props {
 }
 
 export function LessonTiles({cards}: props) {
+
+    const navigate = useNavigate();
     return(
         <div className={styles.initialContainer}>
             <h1 className={styles.pageTitle}>Lessons Overview</h1>
@@ -25,9 +29,22 @@ export function LessonTiles({cards}: props) {
                                     <p>{card.shortText}</p>
                                 </div>
                                 <div className={styles.btnContainer}>
-                                    <AdjustablePillButton text={card.startBtn} darkmode={true} icon={book_icon}/>
-                                    <AdjustablePillButton text={card.watchBtn} darkmode={true} icon={camera_icon}/>
-                                    <AdjustablePillButton text={card.testBtn} darkmode={true} icon={quiz_icon}/>
+                                    <AdjustablePillButton 
+                                        text={card.startBtn} 
+                                        darkmode={true} 
+                                        icon={book_icon}
+                                    />
+                                    <AdjustablePillButton
+                                        onClick = {() => navigate(`videos/${card.id}`)} 
+                                        text={card.watchBtn} 
+                                        darkmode={true} 
+                                        icon={camera_icon}
+                                    />
+                                    <AdjustablePillButton
+                                        text={card.testBtn}
+                                        darkmode={true}
+                                        icon={quiz_icon}
+                                    />
                                 </div>
                             </div>
                             <div className = {styles.picContainer}>

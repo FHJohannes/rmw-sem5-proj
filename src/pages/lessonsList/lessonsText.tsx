@@ -1,6 +1,7 @@
 import placeholderIMG from 'src/assets/images/i_am_speed.png';
 
 export interface lessonCard2{
+    id: number;
     title: string;
     shortText: string;
     img: string;
@@ -11,6 +12,7 @@ export interface lessonCard2{
 
 export const previewLessons2: lessonCard2[] = [
     {
+        id: 1,
         title: "Lesson 1",
         shortText: "In this lesson you will learn about the different tiles, their suits and names.",
         img: placeholderIMG,
@@ -20,6 +22,7 @@ export const previewLessons2: lessonCard2[] = [
 
     },
     {
+        id: 2,
         title: "Lesson 2",
         shortText: "Here you will learn more about your playing Hand and how to form it into a winning hand.",
         img: placeholderIMG,
@@ -28,6 +31,7 @@ export const previewLessons2: lessonCard2[] = [
         testBtn: "Test Your Knowledge"
     },
     {
+        id: 3,
         title: "Lesson 3",
         shortText: "Learn all the different audible calls you can make during a game and what they do.",
         img: placeholderIMG,
@@ -36,6 +40,7 @@ export const previewLessons2: lessonCard2[] = [
         testBtn: "Test Your Knowledge"
     },
     {
+        id: 4,
         title: "Lesson 4",
         shortText: "Here you will learn about the gameplay element called 'Dora'. As well as its closely connected friend, the Dead Wall.",
         img: placeholderIMG,
@@ -44,6 +49,7 @@ export const previewLessons2: lessonCard2[] = [
         testBtn: "Test Your Knowledge"
     },
     {
+        id: 5,
         title: "Lesson 5",
         shortText: "Get to know some important terminology and the significance behind Riichi Mahjongs Winds.",
         img: placeholderIMG,
@@ -52,6 +58,7 @@ export const previewLessons2: lessonCard2[] = [
         testBtn: "Test Your Knowledge"
     },
     {
+        id: 6,
         title: "Lesson 6",
         shortText: "Learn your first basic yakus.",
         img: placeholderIMG,
@@ -59,7 +66,7 @@ export const previewLessons2: lessonCard2[] = [
         watchBtn: "Watch Video",
         testBtn: "Test Your Knowledge"
     },
-    {
+    {   id: 7,
         title: "Lesson 7",
         shortText: "Recap everything you have learned on this Webpage.",
         img: placeholderIMG,

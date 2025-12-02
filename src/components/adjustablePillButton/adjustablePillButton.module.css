@@ -6,7 +6,7 @@
     align-items: center;
     gap: 10px;
     transition: background-color .25s;
-    font-size: 130%;
+    font-size: 120%;
     font-family: var(--font-main)
 }
 
@@ -29,5 +29,5 @@
 }
 
 .icon{
-    width: 2vw;
+    width: 1.8vw;
 }

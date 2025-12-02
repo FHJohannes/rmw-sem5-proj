@@ -4,12 +4,13 @@ interface props{
     text: string;
     darkmode: boolean;
     icon: string;
+    onClick?: () => void;
 }
 
-export function AdjustablePillButton({text, darkmode, icon}: props) {
+export function AdjustablePillButton({text, darkmode, icon, onClick}: props) {
     const modeClass = darkmode ? styles.dark : styles.light;
      return (
-        <button className={[styles.adjustablePillButtonBody, modeClass].join(" ")}>
+        <button onClick={onClick} className={[styles.adjustablePillButtonBody, modeClass].join(" ")}>
             <img src = {icon} alt = '' className={styles.icon}></img>
             {text}
         </button>

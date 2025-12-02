@@ -1,0 +1,12 @@
+.initialContainer {
+    margin: 4.5vw 9.4vw 4.5vw 9.4vw
+}
+
+.initialContainer .pageTitle {
+    display: flex;
+}
+
+.initialContainer .pageP {
+    display: flex;
+    color: #757575;
+}
