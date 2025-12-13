@@ -28,7 +28,7 @@
 
 .btnContainer #btn {
     border-radius: 25px;
-    padding: 11px 15px 11px 15px;
+    padding: 1vh 1.2vw 1vh 1.2vw;
     border: none;
     display: flex;
     align-items: center;
@@ -43,3 +43,48 @@
         color: white;
     }
 }
+
+.btnArrow {
+    margin-top: 0.06vh;
+    margin-left: 0vw;
+    margin-right: 0vw;
+}
+
+.videoPlaceholder{
+    border-radius: 30px;
+    border: 0;
+    margin-top: 3.5vh;
+    width: 81.2vw;
+    height: 81.2vh;
+}
+
+.pageDescription {
+    margin-top: 5vh;
+}
+
+.pageDescription h2, p{
+    text-align: left;
+}
+
+.btnWrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.optionBtns {
+    width: 40vw;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.optionBtns .testBtn {
+    margin-left: 0;
+}
+
+.optionBtns .backToBtn {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+
