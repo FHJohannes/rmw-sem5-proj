@@ -29,8 +29,10 @@ export function VideoContent({content}: props){
             <div className={styles.initialContainer}>
                 <h1 className={styles.pageTitle}>{lessonVideo?.videoTitle}</h1>
                 <em className={styles.pageP}>{lessonVideo?.videoShortDescription}</em>
-                <button onClick = {goPrev}>Previous</button>
-                <button onClick = {goForth}>Next</button>
+                <div className={styles.btnContainer}>
+                    <button className={styles.prevBtn} id={styles.btn} onClick = {goPrev}>Previous</button>
+                    <button className={styles.nextBtn} id={styles.btn} onClick = {goForth}>Next</button>
+                </div>
             </div>
         </>
     )

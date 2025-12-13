@@ -10,3 +10,36 @@
     display: flex;
     color: #757575;
 }
+
+.initialContainer .prevBtn {
+    margin-left: 0;
+}
+
+.initialContainer .nextBtn {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.initialContainer .btnContainer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.5vh;
+}
+
+.btnContainer #btn {
+    border-radius: 25px;
+    padding: 11px 15px 11px 15px;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color .25s;
+    font-size: 95%;
+    font-family: var(--font-main);
+    background-color: #D9D9D9;
+    color: var(--font-color);
+    &:hover{
+        background-color: #757575;
+        color: white;
+    }
+}

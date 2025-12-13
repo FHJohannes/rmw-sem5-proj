@@ -20,7 +20,7 @@
 }
 
 .light{
-    background-color: white;
+    background-color: #D9D9D9;
     color: var(--font-color);
     &:hover{
         background-color: #757575;
