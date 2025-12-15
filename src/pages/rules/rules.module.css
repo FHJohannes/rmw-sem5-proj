@@ -3,9 +3,11 @@
         align-items: flex-start;
         text-align: left;
         gap: 60px;
+        padding: 54px 8vw;
     }
     & section:nth-child(2n) {
-        background-color: #D9D9D9;
+        background-color: var(--color-green);
+        color: white;
     }
 }
 .title{

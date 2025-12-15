@@ -90,7 +90,7 @@ export const useTilesByName = (codes: string[]): MahjongTile[] => {
         suit,
         value,
         name: `${value} of ${suit}`,
-        image: `src/assets/riichi-mahjong-tiles/${suit}${value}.svg`,
+        image: `/src/assets/riichi-mahjong-tiles/${suit}${value}.png`,
       };
     }
 
@@ -105,7 +105,7 @@ export const useTilesByName = (codes: string[]): MahjongTile[] => {
         value: null,
         honorType: "wind",
         name: `${code} Wind`,
-        image: `src/assets/riichi-mahjong-tiles/${code}.svg`,
+        image: `/src/assets/riichi-mahjong-tiles/${code}.png`,
       };
     }
 
@@ -120,7 +120,7 @@ export const useTilesByName = (codes: string[]): MahjongTile[] => {
         value: null,
         honorType: "dragon",
         name: `${code} Dragon`,
-        image: `src/assets/riichi-mahjong-tiles/${code}.svg`,
+        image: `/src/assets/riichi-mahjong-tiles/${code}.png`,
       };
     }
 

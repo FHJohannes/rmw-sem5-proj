@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
 
 :root {
     --font-main: 'Lexend', sans-serif;
-    --font-heading: 'Gasoek One', sans-serif;
+    --font-heading: 'Sora', sans-serif;
 
     --size-h1: 64px;
     --size-h2: 24px;
@@ -16,4 +16,9 @@
     --font-color: black;
 
     --bg-light-gray: #D9D9D9;
+
+    --color-dark-green: #03440C;
+    --color-green: #016732;
+    --color-light-green: #78BB9D;
+    --color-white-green: #D6F3E4;
 }

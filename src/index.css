@@ -49,6 +49,9 @@ p{
   margin: 0;
   font-size: var(--size-standard);
 }
+main{
+  margin-top: 70px;
+}
 section{
   padding: 25px 8vw;
   display: flex;

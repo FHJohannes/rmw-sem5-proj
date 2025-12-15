@@ -31,12 +31,25 @@
 }
 
 
-
 .dark{
-    background-color: #D9D9D9;
+    background-color: var(--color-dark-green);
+    color: white;
+}
+
+.medium{
+    background-color: var(--color-green);
+    color: white;
+}
+
+.light{
+    background-color: var(--color-light-green);
     color: var(--font-color);
 }
-.light{
+.xlight{
+    background-color: var(--color-white-green);
+    color: var(--font-color);
+}
+.white{
     background-color: white;
     color: var(--font-color);
 }

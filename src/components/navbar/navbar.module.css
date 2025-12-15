@@ -3,7 +3,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #D9D9D9;
+    background-color: var(--color-green);
     height: 70px;
     width: 100vw;
     position: fixed;
@@ -40,10 +40,10 @@ nav a {
     width: 100%;
     height: 100%;
     text-decoration: none;
-    background-color: #D9D9D9;
+    background-color: var(--color-green);
     transition: background-color 0.2s ease;
 
     &:hover{
-        background-color: #757575;
+        background-color: var(--color-dark-green);
     }
 }

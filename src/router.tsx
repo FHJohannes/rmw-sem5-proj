@@ -5,6 +5,7 @@ import { Rules } from "./pages/rules/Rules.tsx";
 import { Play } from "./pages/play/Play.tsx";
 import { App } from './App.tsx';
 import { VideoPage } from "./pages/videoPages/videoPage.tsx";
+import { QuizPage } from "./pages/quiz/quizPage.tsx";
 
 
 export const router = createBrowserRouter([
@@ -19,12 +20,9 @@ export const router = createBrowserRouter([
             {path: "/shortrules", element: <LandingPage anchor="shortrules"/>},
             {path: "/overview", element: <LandingPage anchor="tiles"/>},
             {path: "/summary", element: <LandingPage anchor="summary"/>},
-            {
-                path: "/lessons",
-                element: <LessonsList/>,
-                // children: [ { path: "/", element: <LandingPage /> } ], will be used for individual lessons
-            },
+            {path: "/lessons", element: <LessonsList/>},
             {path: "/lessons/videos/:id", element: <VideoPage/>},
+            {path: "/lessons/quiz/:id", element: <QuizPage/>},
             {path: "/rules", element: <Rules/>},
             {path: "/play", element: <Play/>},
         ],

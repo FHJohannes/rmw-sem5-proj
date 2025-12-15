@@ -1,7 +1,17 @@
 .welcomeSection{
     height: 80vh;
-
-    & p{
+    background-image: url("/src/assets/images/tile_pattern_green.png");
+    background-repeat: repeat;
+    display: flex;
+    flex-direction: row;
+    & .welcomeText{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        width: 40%;
+    }
+    & img{
         width: 60%;
     }
 }

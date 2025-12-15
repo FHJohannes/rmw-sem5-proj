@@ -6,16 +6,32 @@ interface Props{
     text: string;
     description?: any;
     row: boolean;
-    darkMode: boolean;
+    stylemode: string;
     children?: ReactNode;
 }
 
-export function TextBox({ children, title, text, row, darkMode, description }: Props) {
+function getStyle(type: string):string{
+    switch (type) {
+        case "medium":
+            return styles.medium
+        case "light":
+            return styles.light
+        case "xlight":
+            return styles.xlight
+        case "dark":
+            return styles.dark
+        case "white":
+            return styles.white
+        default:
+            return "";
+    }
+}
+
+export function TextBox({ children, title, text, row, stylemode, description }: Props) {
     const layoutClass = row ? styles.row : styles.column;
-    const modeClass = darkMode ? styles.dark : styles.light;
     return (
         <div>
-            <div className={[styles.container, layoutClass, modeClass].join(" ")}>
+            <div className={[styles.container, layoutClass, getStyle(stylemode)].join(" ")}>
                 <div>
                     <p><em>{ title }</em></p>
                     <p>{ text }</p>

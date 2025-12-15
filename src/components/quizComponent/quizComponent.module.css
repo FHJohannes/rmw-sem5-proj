@@ -1,0 +1,131 @@
+section{
+    & .pageTitle{
+        align-self: flex-start;
+    }
+    & .questionNav{
+        display: flex;
+        gap: 15px;
+        width: 100%;
+        justify-content: center;
+        margin: 15px 0;
+        & button{
+            flex:1;
+            max-width: 185px;
+            border-radius: 25px;
+            border: none;
+            height: 11px;
+            background-color: var(--color-white-green);
+        }
+        & .questionNavActive{
+            background-color: var(--color-dark-green);
+        }
+    }
+    & .quizNav{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: 15px 0;
+        & button{
+            border-radius: 25px;
+            padding: 11px 25px;
+            border: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background-color: var(--color-dark-green);
+            color: white;
+            &:hover{
+                background-color: var(--color-green);
+                color: white;
+            }
+        }
+    }
+    & .questionImage{
+        padding: 33px 40px;
+        background-color: var(--color-white-green);
+        border-radius: 15px;
+    }
+    & form{
+        padding: 30px 0;
+        & .questionType1{
+            display: flex;
+            flex-direction: column;
+            gap: 13px;
+            width: 50vw;
+            max-width: 600px;
+            & .questionWrapper{
+                display: flex;
+                cursor:pointer;
+                background-color: var(--color-white-green);
+                border-radius: 30px;
+                padding: 15px 20px;
+            }
+        }
+        & .questionType2{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 13px;
+            width: 50vw;
+            max-width: 600px;
+            & .questionWrapper{
+                cursor:pointer;
+                background-color: var(--color-white-green);
+                border-radius: 30px;
+                padding: 15px 41px;
+            }
+        }
+        & .questionType3{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 13px;
+            width: 50vw;
+            max-width: 600px;
+            & .questionWrapper{
+                cursor:pointer;
+                background-color: var(--color-white-green);
+                border-radius: 30px;
+                padding: 15px 20px;
+            }
+            & span{
+                padding: 33px 40px;
+            }
+        }
+
+        & .formControls{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding-top: 30px;
+        }
+        .checkboxRound {
+            width: 19px;
+            height: 19px;
+            background-color: var(--color-white-green);
+            border-radius: 50%;
+            vertical-align: middle;
+            border: 3px solid var(--color-dark-green);
+            appearance: none;
+            -webkit-appearance: none;
+            outline: none;
+            cursor: pointer;
+        }
+        .checkboxRound:checked {
+            background-color: var(--color-dark-green);
+            border-color: var(--color-white-green);
+        }
+        .questionWrapper:has(input[type="checkbox"]:checked) {
+            background-color: var(--color-green);
+        }
+        
+        .wrongAnswer {
+            background-color: darkred;
+            &:hover {
+                background-color: red;
+            }
+        }
+    }
+}
