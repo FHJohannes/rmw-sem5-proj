@@ -1,7 +1,7 @@
 import type { quiz, question, answer } from "src/pages/quiz/useQuizContent";
 import styles from './quizComponent.module.css'
 import { useNavigate, useParams } from "react-router-dom";
-import {  useEffect, useState } from "react";
+import {  useEffect, useRef, useState } from "react";
 import type { FormEvent, } from "react";
 import { IconButton } from 'src/components/iconButton/iconButton'
 import { MdOutlineQuiz } from "react-icons/md";
@@ -24,6 +24,8 @@ export function QuizComponent({content}: props) {
     const [currentQuestion, setCurrentQuestion] = useState<question>(currentQuiz.questions[0]);
     const [questionStyleClass, setQuestionStyleClass] = useState<string>(styles.questionType1);
 
+    const formRef = useRef<HTMLFormElement | null>(null);
+    
     useEffect(() => {
         if(id < content.length && id >= 0){
             const quiz = content.find((quiz) => quiz.id === id);
@@ -69,6 +71,7 @@ export function QuizComponent({content}: props) {
     };
 
     const resetQuestion = () => {
+        formRef.current?.reset();
         setQuizState(prev => {
             const copy = [...prev];   
             copy[currentQuestion.id] = "unanswered";
@@ -76,15 +79,16 @@ export function QuizComponent({content}: props) {
         })
     }
 
-
     const goPrev = () => {
-        const prevId = id > 0 ? id - 1 : content[content.length - 1].id;
-        navigate(`/lessons/quiz/${prevId}`);                
+        const prevId = currentQuestion.id > 0 ? currentQuestion.id - 1 : currentQuiz.questions[currentQuiz.questions.length - 1].id;
+        setCurrentQuestion(currentQuiz.questions[prevId]);
+        formRef.current?.reset();             
     }
 
     const goNext = () => {
-        const nextId = id < content.length-1 ? id + 1: content[0].id;
-        navigate(`/lessons/quiz/${nextId}`);    
+        const nextId = currentQuestion.id < currentQuiz.questions.length-1 ? currentQuestion.id + 1: currentQuiz.questions[0].id;
+        setCurrentQuestion(currentQuiz.questions[nextId]);
+        formRef.current?.reset();  
     }
 
     return (
@@ -100,7 +104,7 @@ export function QuizComponent({content}: props) {
             <em>{currentQuestion.id+1}/{currentQuiz.questions.length} Question</em>
             <h2>{currentQuestion.id+1 + ". " +currentQuestion.title}</h2>
             {currentQuestion.type === 3 &&<span className={styles.questionImage}>{currentQuestion.image}</span>}
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} ref={formRef}>
                 <div className={questionStyleClass}>
                     {currentQuestion.answers.map(answer => 
                         <label key={answer.id} className={styles.questionWrapper}>

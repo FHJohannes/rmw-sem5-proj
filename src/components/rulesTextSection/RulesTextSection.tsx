@@ -1,20 +1,48 @@
 import  styles from './rulesTextSection.module.css'
 import  { PillButton } from '../pillButton/pillButton.tsx'
-import placeholderIMG from 'src/assets/images/i_am_speed.png';
 
+interface Props{
+    title: string;
+    subtitle: string;
+    text: string;
+    buttonText: string;
+    buttonStyle: string;
+    stylemode: string;
+    imgPath: string;
+    reverse?: boolean;
+    onClick?: () => void;
+} 
 
-export function RulesTextSection() {
+function getStyle(type: string):string{
+    switch (type) {
+        case "medium":
+            return styles.medium
+        case "light":
+            return styles.light
+        case "xlight":
+            return styles.xlight
+        case "dark":
+            return styles.dark
+        case "white":
+            return styles.white
+        default:
+            return "";
+    }
+}
+
+export function RulesTextSection({title, subtitle, text, buttonText, buttonStyle, reverse, imgPath, stylemode, onClick}: Props) {
+    const layoutClass:string = !reverse ? styles.row : styles.reverse
     return (
-        <section className={styles.RulesTextSection}>
+        <section className={[styles.RulesTextSection, layoutClass, getStyle(stylemode)].join(" ")}>
             <div>
                 <span>
-                    <h2>Rules</h2>
-                    <h3>Subheading</h3>
+                    <h2>{title}</h2>
+                    <h3>{subtitle}</h3>
                 </span>
-                <p>Lorem ipsum brizzle for sure amet, shiz adipiscing fo shizzle mah nizzle fo rizzle, mah home g-dizzle. Nullizzle you son of a bizzle velizzle, dawg volutpizzle, suscipizzle bow wow wow, get down get down vizzle, arcu. Pellentesque eget tortizzle. Sed erizzle. Gizzle izzle dolor dapibizzle ma nizzle tempizzle tempizzle. Mauris break it down nibh izzle shizzlin dizzle. Nizzle izzle tortor. Its fo rizzle sizzle boofron ghetto. In ass mofo fo shizzle dictumst. Funky fresh dapibizzle. Phat tellus urna, gizzle boofron, mattizzle shizznit, gangsta vitae, nunc. Fo shizzle suscipizzle. Integizzle sempizzle the bizzle sizzle purus.</p>
-                <PillButton text="Refresh your memory now" darkmode={false}/>
+                <p>{text}</p>
+                <PillButton text={buttonText} stylemode={buttonStyle} onClick={onClick}/>
             </div>
-            <img src={placeholderIMG} alt="a placeholder image" />
+            <img src={imgPath} alt="a placeholder image" />
             
         </section>
     )

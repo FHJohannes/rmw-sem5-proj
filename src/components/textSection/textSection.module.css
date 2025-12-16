@@ -1,6 +1,8 @@
 .textSection{
     padding-top: 60px;
     padding-bottom: 110px;
+    background-color: var(--color-green);
+    color: white;
 }
 
 .left{

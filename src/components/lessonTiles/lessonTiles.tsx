@@ -44,6 +44,7 @@ export function LessonTiles({cards}: props) {
                                         text={card.testBtn}
                                         darkmode={true}
                                         icon={quiz_icon}
+                                        onClick={() => navigate(`/lessons/quiz/${card.id-1}`)}
                                     />
                                 </div>
                             </div>

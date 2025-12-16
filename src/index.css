@@ -29,10 +29,12 @@ h1, h2, h3, h4, h5, h6{
 }
 h1{
   font-size: var(--size-h1);
+  font-weight: 800;
 }
 h2{
   font-size: var(--size-h2);
   margin: 35px;
+  font-weight: 800;
 }
 h3{
   font-size: var(--size-h3);
@@ -53,7 +55,7 @@ main{
   margin-top: 70px;
 }
 section{
-  padding: 25px 8vw;
+  padding: 58px 8vw;
   display: flex;
   flex-direction: column;
   align-items: center;

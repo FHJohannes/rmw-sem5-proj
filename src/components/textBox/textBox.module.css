@@ -35,12 +35,10 @@
     background-color: var(--color-dark-green);
     color: white;
 }
-
 .medium{
     background-color: var(--color-green);
     color: white;
 }
-
 .light{
     background-color: var(--color-light-green);
     color: var(--font-color);

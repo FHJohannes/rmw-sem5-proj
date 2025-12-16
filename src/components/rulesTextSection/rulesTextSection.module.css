@@ -5,22 +5,52 @@
     display: flex;
     justify-content: space-between;
     gap: 40px;
-    flex-direction: row;
+    
     & div {
-        height: 400px;
+        height: 350px;
         padding: 20px 0;
+        margin: 37px 0;
         text-align: left;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
         box-sizing: border-box;
+        gap: 30px;
         & h2{
-            margin: 0;
+            margin-bottom: 10px;
         }
     }
     & img{
-        height: 400px;
+        height: 350px;
         border-radius: 15px;
     }
+}
+.row{
+    flex-direction: row;
+}
+.reverse{
+    flex-direction: row-reverse;
+}
+
+
+.dark{
+    background-color: var(--color-dark-green);
+    color: white;
+}
+.medium{
+    background-color: var(--color-green);
+    color: white;
+}
+.light{
+    background-color: var(--color-light-green);
+    color: var(--font-color);
+}
+.xlight{
+    background-color: var(--color-white-green);
+    color: var(--font-color);
+}
+.white{
+    background-color: white;
+    color: var(--font-color);
 }
