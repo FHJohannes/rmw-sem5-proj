@@ -125,6 +125,21 @@ export const useTilesByName = (codes: string[]): MahjongTile[] => {
     }
 
     //
+    // dora tiles: Haku, Hatsu, Chun
+    //
+    const dora = ["Man5-Dora", "Pin5-Dora", "Sou5-Dora"] as const;
+    if (dora.includes(code as any)) {
+      return {
+        id: `dragon-${code}-${index}`,
+        suit: "honor",
+        value: null,
+        honorType: "dragon",
+        name: `${code}`,
+        image: `/src/assets/riichi-mahjong-tiles/${code}.png`,
+      };
+    }
+
+    //
     // No matching format -> fail explicitly
     //
     throw new Error(`Invalid tile code: ${code}`);

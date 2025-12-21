@@ -4,8 +4,6 @@ import { Element, scroller } from 'react-scroll';
 import { Welcome } from 'src/components/welcome/Welcome.tsx';
 import { TextSection } from 'src/components/textSection/TextSection.tsx';
 import { RulesTextSection } from 'src/components/rulesTextSection/RulesTextSection.tsx';
-import { Tiles } from 'src/components/tiles/Tiles.tsx';
-import { previewLessons } from './previewLessons.tsx'
 import { useNavigate } from "react-router-dom";
  
 interface Props {
