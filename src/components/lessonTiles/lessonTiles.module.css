@@ -41,6 +41,18 @@
     height: 30vh;
     margin: 0 auto;
     overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.lessonTileBody:nth-child(odd){
+    background-image: url("../../assets/imagesLessons/bg1.png");
+
+}
+
+.lessonTileBody:nth-child(even) {
+    background-image: url("../../assets/imagesLessons/bg2.png");
 }
 
 p{

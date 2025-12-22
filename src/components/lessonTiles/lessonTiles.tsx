@@ -5,6 +5,8 @@ import book_icon from 'src/assets/icons/Book_open.png';
 import camera_icon from 'src/assets/icons/Video.png';
 import quiz_icon from 'src/assets/icons/quiz.png';
 import { useNavigate } from "react-router-dom";
+import bg1 from "../../assets/imagesLessons/bg1.png"
+import bg2 from "../../assets/imagesLessons/bg2.png"
 
 
 
@@ -31,18 +33,18 @@ export function LessonTiles({cards}: props) {
                                 <div className={styles.btnContainer}>
                                     <AdjustablePillButton 
                                         text={card.startBtn} 
-                                        darkmode={true} 
+                                        mode={"first"} 
                                         icon={book_icon}
                                     />
                                     <AdjustablePillButton
                                         onClick = {() => navigate(`videos/${card.id}`)} 
                                         text={card.watchBtn} 
-                                        darkmode={true} 
+                                        mode={"second"} 
                                         icon={camera_icon}
                                     />
                                     <AdjustablePillButton
                                         text={card.testBtn}
-                                        darkmode={true}
+                                        mode={"third"}
                                         icon={quiz_icon}
                                         onClick={() => navigate(`/lessons/quiz/${card.id-1}`)}
                                     />

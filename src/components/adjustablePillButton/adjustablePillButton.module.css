@@ -28,6 +28,18 @@
     }
 }
 
+.first{
+    background-color: var(--color-light-green);
+}
+
+.second{
+    background-color: var(--color-green);
+}
+
+.third{
+    background-color: var(--color-dark-green);
+}
+
 .icon{
     width: 1.8vw;
 }
