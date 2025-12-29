@@ -57,7 +57,7 @@ export function VideoContent({content}: props){
                         <div className={styles.testBtn}>
                             <AdjustablePillButton 
                                 text={String(lessonVideo?.testYourKnowledgeBtn)} 
-                                darkmode={true} 
+                                mode={"dark"} 
                                 icon={quiz_icon}
                                 //onClick={() => navigate(`/quiz/}`)}
                             />
@@ -65,7 +65,7 @@ export function VideoContent({content}: props){
                         <div className={styles.backToBtn}>
                             <AdjustablePillButton 
                                 text={String(lessonVideo?.backToLessonsBtn)} 
-                                darkmode={true} 
+                                mode={"dark"} 
                                 icon={book_icon}
                                 onClick={() => navigate(`/lessons/`)}
                             />

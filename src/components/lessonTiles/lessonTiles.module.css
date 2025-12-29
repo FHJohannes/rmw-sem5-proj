@@ -8,7 +8,7 @@
 }
 
 .initialContainer{
-    margin: 4.5vw 9.4vw 4.5vw 9.4vw
+    margin: 4.5vw 9.4vw 4.5vw 9.4vw;
 }
 
 .initialContainer .pageTitle{
@@ -21,7 +21,8 @@
 }
 
 .initialContainer .cardText{
-    width: 75%;
+    width: 85%;
+    color: white;
 }
 
 .lessonTileBody .btnContainer{
@@ -35,7 +36,7 @@
     box-sizing: border-box;
     background: lightgray;
     display: flex;
-    padding: 12px;
+    padding: 18px;
     border-radius: 20px;
     width: 100%;
     height: 30vh;
@@ -86,9 +87,11 @@ h2{
     height: auto;
     border-radius: 15px;
     margin-left: auto;
+    padding: unset;
 }
 
-.picContainer{
+.lessonTileBody .picContainer{
     width: 100%;
-    margin: 1vh 0.5vw 1vh 0vh;
+    margin: -18px;
+    margin-left: 5vw;
 }

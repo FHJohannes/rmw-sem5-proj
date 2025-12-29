@@ -1,12 +1,11 @@
 import { AdjustablePillButton } from "../adjustablePillButton/adjustablePillButton";
 import styles from "./lessonTiles.module.css";
 import type { lessonCard2 } from "src/pages/lessonsList/lessonsText";
-import book_icon from 'src/assets/icons/Book_open.png';
+import book_icon from 'src/assets/icons/Book_open_inverted.png';
 import camera_icon from 'src/assets/icons/Video.png';
 import quiz_icon from 'src/assets/icons/quiz.png';
 import { useNavigate } from "react-router-dom";
-import bg1 from "../../assets/imagesLessons/bg1.png"
-import bg2 from "../../assets/imagesLessons/bg2.png"
+
 
 
 

@@ -34,10 +34,12 @@
 
 .second{
     background-color: var(--color-green);
+    color: white;
 }
 
 .third{
     background-color: var(--color-dark-green);
+    color: white;
 }
 
 .icon{
