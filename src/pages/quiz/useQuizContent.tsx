@@ -28,7 +28,7 @@ export const QuizPageContent: quiz[] = [
         title: "Quiz - Lesson 1",
         questions: [
             {
-                id: 1,
+                id: 0,
                 title: "Which of these is a Character tile?",
                 type: 2,
                 validation: [0],
@@ -50,7 +50,7 @@ export const QuizPageContent: quiz[] = [
                 ],
             },
             {
-                id: 1,
+                id: 2,
                 title: "Choose all the terminal tiles!",
                 type: 2,
                 validation: [0,1],
@@ -61,7 +61,7 @@ export const QuizPageContent: quiz[] = [
                 ],
             },
             {
-                id: 1,
+                id: 3,
                 title: "Choose all the honor tiles!",
                 type: 2,
                 validation: [2],
@@ -72,7 +72,7 @@ export const QuizPageContent: quiz[] = [
                 ],
             },
             {
-                id: 1,
+                id: 4,
                 title: "What suit does this tile belong to?",
                 type: 3,
                 validation: [1],
@@ -84,7 +84,7 @@ export const QuizPageContent: quiz[] = [
                 ],
             },
             {
-                id: 1,
+                id: 5,
                 title: "How many copies of every tile are in the game?",
                 type: 1,
                 validation: [1],
@@ -112,7 +112,7 @@ export const QuizPageContent: quiz[] = [
                 ],
             },
             {   
-                id: 0,
+                id: 1,
                 title: "How many different tilegroups exist in Riichi Mahjong?",
                 type: 1,
                 validation: [0],
@@ -123,7 +123,7 @@ export const QuizPageContent: quiz[] = [
                 ],
             },
             {   
-                id: 0,
+                id: 2,
                 title: "How are most complete hands formed?",
                 type: 1,
                 validation: [1],
@@ -134,7 +134,7 @@ export const QuizPageContent: quiz[] = [
                 ],
             },
             {
-                id: 1,
+                id: 3,
                 title: "Which of these is a valid sequence?",
                 type: 2,
                 validation: [2],
@@ -145,7 +145,7 @@ export const QuizPageContent: quiz[] = [
                 ],
             },
             {   
-                id: 0,
+                id: 4,
                 title: "When is a Quadruplet valid?",
                 type: 1,
                 validation: [1],
@@ -158,7 +158,7 @@ export const QuizPageContent: quiz[] = [
         ],
     },
     {
-        id: 1,
+        id: 2,
         title: "Quiz - Lesson 3",
         questions: [
             {
@@ -173,7 +173,7 @@ export const QuizPageContent: quiz[] = [
                 ],
             },
             {   
-                id: 0,
+                id: 1,
                 title: "When can you call CHI",
                 type: 1,
                 validation: [1],
@@ -184,7 +184,7 @@ export const QuizPageContent: quiz[] = [
                 ],
             },
             {   
-                id: 0,
+                id: 2,
                 title: "Which tile does this hand need to win?",
                 type: 3,
                 validation: [0],
@@ -197,7 +197,7 @@ export const QuizPageContent: quiz[] = [
                 ],
             },
             {
-                id: 1,
+                id: 3,
                 title: "What must apply so that you can call Riichi",
                 type: 1,
                 validation: [0,1],
@@ -208,7 +208,7 @@ export const QuizPageContent: quiz[] = [
                 ],
             },
             {   
-                id: 0,
+                id: 4,
                 title: "When can you call RON?",
                 type: 1,
                 validation: [0],
@@ -219,7 +219,7 @@ export const QuizPageContent: quiz[] = [
                 ],
             },
             {   
-                id: 0,
+                id: 5,
                 title: "How many options of calling KAN exist?",
                 type: 1,
                 validation: [1],
@@ -232,11 +232,11 @@ export const QuizPageContent: quiz[] = [
         ],
     },
     {
-        id: 1,
+        id: 3,
         title: "Quiz - Lesson 4",
         questions: [
             {
-                id: 1,
+                id: 0,
                 title: "If the 3 of bamboo is the dora-indicator, which tile is the dora?",
                 type: 2,
                 validation: [0],
@@ -258,7 +258,7 @@ export const QuizPageContent: quiz[] = [
                 ],
             },
             {
-                id: 1,
+                id: 2,
                 title: "If the East Wind is the dora-indicator, which tile is the dora?",
                 type: 2,
                 validation: [2],
@@ -269,7 +269,7 @@ export const QuizPageContent: quiz[] = [
                 ],
             },
             {
-                id: 1,
+                id: 3,
                 title: "If the White Dragon is the dora-indicator, which tile is the dora?",
                 type: 2,
                 validation: [1],
@@ -282,11 +282,11 @@ export const QuizPageContent: quiz[] = [
         ],
     },
     {
-        id: 1,
+        id: 4,
         title: "Quiz - Lesson 5",
         questions: [
             {
-                id: 1,
+                id: 0,
                 title: "What is Tenpai",
                 type: 1,
                 validation: [0],
@@ -308,7 +308,7 @@ export const QuizPageContent: quiz[] = [
                 ],
             },
             {
-                id: 1,
+                id: 2,
                 title: "What is always the Dealers-Seatwind?",
                 type: 1,
                 validation: [1],
@@ -321,11 +321,11 @@ export const QuizPageContent: quiz[] = [
         ],
     },
     {
-        id: 1,
+        id: 5,
         title: "Quiz - Lesson 6",
         questions: [
             {
-                id: 1,
+                id: 0,
                 title: "Can a hand have more than one Yaku?",
                 type: 1,
                 validation: [0],
@@ -335,7 +335,7 @@ export const QuizPageContent: quiz[] = [
                 ],
             },
             {   
-                id: 0,
+                id: 1,
                 title: "What Yaku does this hand have?",
                 type: 3,
                 validation: [0],
@@ -347,7 +347,7 @@ export const QuizPageContent: quiz[] = [
                 ],
             },
             {   
-                id: 0,
+                id: 2,
                 title: "What Yaku does this hand have?",
                 type: 3,
                 validation: [1],
@@ -359,8 +359,10 @@ export const QuizPageContent: quiz[] = [
                 ],
             },
         ],
-    },
+    },/*
     {
+        //%% EXAMPLES %% 
+        %/&%/&%/&%/%&/%&
         id: 1,
         title: "Example Structure of quiztype",
         questions: [
@@ -399,5 +401,5 @@ export const QuizPageContent: quiz[] = [
                 ],
             }
         ],
-    },
+    },*/
 ]
