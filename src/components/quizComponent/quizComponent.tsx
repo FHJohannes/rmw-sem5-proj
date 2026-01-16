@@ -7,6 +7,8 @@ import { IconButton } from 'src/components/iconButton/iconButton'
 import { MdOutlineQuiz } from "react-icons/md";
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 import { FaArrowLeft, FaArrowRight  } from "react-icons/fa6";
+import correctimg from 'src/assets/images/correct.png'
+import incorrectimg from 'src/assets/images/incorrect.png'
 
 
 interface props {
@@ -103,18 +105,27 @@ export function QuizComponent({content}: props) {
 
             <em>{currentQuestion.id+1}/{currentQuiz.questions.length} Question</em>
             <h2>{currentQuestion.id+1 + ". " +currentQuestion.title}</h2>
-            {currentQuestion.type === 3 &&<span className={styles.questionImage}>{currentQuestion.image}</span>}
+            {currentQuestion.image && <span className={styles.questionImage}>{currentQuestion.image}</span>}
             <form onSubmit={handleSubmit} ref={formRef}>
                 <div className={questionStyleClass}>
                     {currentQuestion.answers.map(answer => 
                         <label key={answer.id} className={styles.questionWrapper}>
                             {answer.image}
-                            <input 
-                                type="checkbox" 
-                                name={answer.id.toString()}
-                                className={styles.checkboxRound}                      
-                            />
-                        {answer.text}</label>
+                            <div className={styles.leftWrapper}>
+                                <input 
+                                    type="checkbox" 
+                                    name={answer.id.toString()}
+                                    className={styles.checkboxRound}                      
+                                />
+                                {answer.text}
+                            </div>
+                            
+                            { quizState[currentQuestion.id] !== "unanswered" && <img className={styles.stateIcon} src={
+                                currentQuestion.validation.includes(answer.id)
+                                    ? correctimg 
+                                    : incorrectimg
+                                } alt="" />}
+                        </label>
                     )}
                 </div>
                 <div className={styles.formControls}>

@@ -7,6 +7,7 @@ import { MdOutlineQuiz } from "react-icons/md";
 import { CiVideoOn  } from "react-icons/ci";
 import { useEffect } from 'react';
 import { Element, scroller } from 'react-scroll';
+import { useNavigate } from "react-router-dom";
 
 interface Props {
     anchor?: string;
@@ -14,7 +15,7 @@ interface Props {
 
 export function Rules({ anchor }:Props) {
 
-
+    const navigate = useNavigate();
     useEffect(() => {
         if (anchor) {
             scroller.scrollTo(anchor, {
@@ -36,19 +37,21 @@ export function Rules({ anchor }:Props) {
     return (
         <main className={styles.page}>
             <section>
-                <div>
-                    <h1 className={styles.title}>Rules Overview</h1>
-                    <p className={styles.subtitle}><em>Learn the basics of Riichi Mahjong in just a few minutes</em></p>
-                    <div className={styles.rulesNav}>
-                        <PillButton text={lesson1Title} stylemode="dark"/>
-                        <PillButton text={lesson2Title} stylemode="light"/>
-                        <PillButton text={lesson3Title} stylemode="medium"/>
-                        <PillButton text={lesson4Title} stylemode="dark"/>
-                        <PillButton text={lesson5Title} stylemode="medium"/>
-                        <PillButton text={lesson6Title} stylemode="light"/>
-                        <PillButton text={lesson7Title} stylemode="dark"/>
+                <Element className={styles.sectionAnchor} name="top">
+                    <div>
+                        <h1 className={styles.title}>Rules Overview</h1>
+                        <p className={styles.subtitle}><em>Learn the basics of Riichi Mahjong in just a few minutes</em></p>
+                        <div className={styles.rulesNav}>
+                            <PillButton text={lesson1Title} stylemode="dark"/>
+                            <PillButton text={lesson2Title} stylemode="light"/>
+                            <PillButton text={lesson3Title} stylemode="medium"/>
+                            <PillButton text={lesson4Title} stylemode="dark"/>
+                            <PillButton text={lesson5Title} stylemode="medium"/>
+                            <PillButton text={lesson6Title} stylemode="light"/>
+                            <PillButton text={lesson7Title} stylemode="dark"/>
+                        </div>
                     </div>
-                </div>
+                </Element>
             </section>
             
             <section>
@@ -111,8 +114,8 @@ export function Rules({ anchor }:Props) {
                             </TextBox>
                         </div>
                     <div className={styles.lessonButtons}>
-                        <IconButton text="Test your Knowledge" stylemode="light" onClick={() => console.log("hello world")}><MdOutlineQuiz /></IconButton>
-                        <IconButton text="Test your Knowledge" stylemode="dark" onClick={() => console.log("hello world")}><CiVideoOn /></IconButton>
+                        <IconButton text="Test your Knowledge" stylemode="light" onClick={() => navigate(`/lessons/quiz/1`)}><MdOutlineQuiz /></IconButton>
+                        <IconButton text="Watch a Video" stylemode="dark" onClick={() => navigate(`/lessons/videos/1`)}><CiVideoOn /></IconButton>
                     </div>
                 </Element>
             </section>
@@ -172,8 +175,8 @@ export function Rules({ anchor }:Props) {
                         {useDisplayTiles(useTilesByName(['Nan', 'Nan']))}
                     </div>
                     <div className={styles.lessonButtons}>
-                        <IconButton text="Test your Knowledge" stylemode="light" onClick={() => console.log("hello world")}><MdOutlineQuiz /></IconButton>
-                        <IconButton text="Test your Knowledge" stylemode="dark" onClick={() => console.log("hello world")}><CiVideoOn /></IconButton>
+                        <IconButton text="Test your Knowledge" stylemode="light" onClick={() => navigate(`/lessons/quiz/2`)}><MdOutlineQuiz /></IconButton>
+                        <IconButton text="Watch a Video" stylemode="dark" onClick={() => navigate(`/lessons/videos/2`)}><CiVideoOn /></IconButton>
                     </div>
                 </Element>
             </section>
@@ -252,8 +255,8 @@ export function Rules({ anchor }:Props) {
                         </div>
                     </div>
                     <div className={styles.lessonButtons}>
-                        <IconButton text="Test your Knowledge" stylemode="light" onClick={() => console.log("hello world")}><MdOutlineQuiz /></IconButton>
-                        <IconButton text="Test your Knowledge" stylemode="dark" onClick={() => console.log("hello world")}><CiVideoOn /></IconButton>
+                        <IconButton text="Test your Knowledge" stylemode="light" onClick={() => navigate(`/lessons/quiz/3`)}><MdOutlineQuiz /></IconButton>
+                        <IconButton text="Watch a Video" stylemode="dark" onClick={() => navigate(`/lessons/videos/3`)}><CiVideoOn /></IconButton>
                     </div>
                 </Element>
             </section>
@@ -324,8 +327,8 @@ export function Rules({ anchor }:Props) {
                         </div>
                     </div>
                     <div className={styles.lessonButtons}>
-                        <IconButton text="Test your Knowledge" stylemode="light" onClick={() => console.log("hello world")}><MdOutlineQuiz /></IconButton>
-                        <IconButton text="Test your Knowledge" stylemode="dark" onClick={() => console.log("hello world")}><CiVideoOn /></IconButton>
+                        <IconButton text="Test your Knowledge" stylemode="light" onClick={() => navigate(`/lessons/quiz/4`)}><MdOutlineQuiz /></IconButton>
+                        <IconButton text="Watch a Video" stylemode="dark" onClick={() => navigate(`/lessons/videos/4`)}><CiVideoOn /></IconButton>
                     </div>
                 </Element>
             </section>
@@ -387,8 +390,8 @@ export function Rules({ anchor }:Props) {
                         />
                     </div>
                     <div className={styles.lessonButtons}>
-                        <IconButton text="Test your Knowledge" stylemode="light" onClick={() => console.log("hello world")}><MdOutlineQuiz /></IconButton>
-                        <IconButton text="Test your Knowledge" stylemode="dark" onClick={() => console.log("hello world")}><CiVideoOn /></IconButton>
+                        <IconButton text="Test your Knowledge" stylemode="light" onClick={() => navigate(`/lessons/quiz/5`)}><MdOutlineQuiz /></IconButton>
+                        <IconButton text="Watch a Video" stylemode="dark" onClick={() => navigate(`/lessons/videos/5`)}><CiVideoOn /></IconButton>
                     </div>
                 </Element>
             </section>
@@ -452,8 +455,8 @@ export function Rules({ anchor }:Props) {
                         </div>
                     </div>
                     <div className={styles.lessonButtons}>
-                        <IconButton text="Test your Knowledge" stylemode="light" onClick={() => console.log("hello world")}><MdOutlineQuiz /></IconButton>
-                        <IconButton text="Test your Knowledge" stylemode="dark" onClick={() => console.log("hello world")}><CiVideoOn /></IconButton>
+                        <IconButton text="Test your Knowledge" stylemode="light" onClick={() => navigate(`/lessons/quiz/6`)}><MdOutlineQuiz /></IconButton>
+                        <IconButton text="Watch a Video" stylemode="dark" onClick={() => navigate(`/lessons/videos/6`)}><CiVideoOn /></IconButton>
                     </div>
                 </Element>
             </section>
@@ -467,8 +470,8 @@ export function Rules({ anchor }:Props) {
                         <p>In theory you can also before you draw a new tile call Chi on the tile from the player to your left or Pon (from any player). Skipping step 1 and 2 and forcing you to discard something from your hand. Or ofcourse call Ron too anytime anyone discards your winning tile (except when you’re in furiten). Or if you have a closed kan you could declare it and draw from the dead wall to extend your turn before you discard a tile (there is also a chance to win from the dead wall draw), if that happens it is handled the same way as a natural tsumo. Funfact this is a stupidly specific and rare yaku, but super satisfying.</p>
                     </div>
                     <div className={styles.lessonButtons}>
-                        <IconButton text="Test your Knowledge" stylemode="light" onClick={() => console.log("hello world")}><MdOutlineQuiz /></IconButton>
-                        <IconButton text="Test your Knowledge" stylemode="dark" onClick={() => console.log("hello world")}><CiVideoOn /></IconButton>
+                        <IconButton text="Test your Knowledge" stylemode="light" onClick={() => navigate(`/lessons/quiz/7`)}><MdOutlineQuiz /></IconButton>
+                        <IconButton text="Watch a Video" stylemode="dark" onClick={() => navigate(`/lessons/videos/7`)}><CiVideoOn /></IconButton>
                     </div>
                 </Element>
             </section>

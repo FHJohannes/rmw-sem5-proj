@@ -13,7 +13,6 @@ export function LandingPage({ anchor }:Props) {
 
     const navigate = useNavigate();
 
-    const placeholder = "Lorem ipsum brizzle for sure amet, shiz adipiscing fo shizzle mah nizzle fo rizzle, mah home g-dizzle. Nullizzle you son of a bizzle velizzle, dawg volutpizzle, suscipizzle bow wow wow, get down get down vizzle, arcu. Pellentesque eget tortizzle. Sed erizzle. Gizzle izzle dolor dapibizzle ma nizzle tempizzle tempizzle. Mauris break it down nibh izzle shizzlin dizzle. Nizzle izzle tortor. Its fo rizzle sizzle boofron ghetto. In ass mofo fo shizzle dictumst. Funky fresh dapibizzle. Phat tellus urna, gizzle boofron, mattizzle shizznit, gangsta vitae, nunc. Fo shizzle suscipizzle. Integizzle sempizzle the bizzle sizzle purus."
 
     useEffect(() => {
         if (anchor) {
@@ -31,7 +30,7 @@ export function LandingPage({ anchor }:Props) {
                 <Welcome />
             </Element>
             <Element name="about">
-                <TextSection title='Mahjong' text={placeholder} align='center'/>
+                <TextSection title='Mahjong' text="Riichi Mahjong is one of many variations of the chinese game mahjong. Unlike solitair mahjong (which you probably thought of when your friend asked you to play some mahjong), this game is played with 4 players and is somewhat similar to poker. There is alot of details, rules and exceptions so dont worry if you dont understand everything immediately." align='center'/>
             </Element>
             <Element name="ShortRules">
                 <RulesTextSection 
@@ -48,8 +47,8 @@ export function LandingPage({ anchor }:Props) {
             <Element name="ShortRules">
                 <RulesTextSection 
                 title='Quiz'
-                subtitle='Rules a written guide'
-                text='This guide will take you from 0 to basic riichi mahjong knowledge. It will try to explain the rules of riichi mahjong in a comprehensive and understandable way. Every chapter is supported by a little quiz and a video tutorial aswell.'
+                subtitle='Quizzes to improve your knowledge.'
+                text='In this section you can deepen your understanding of the different chapters. Each chapter provides a couple of questions which should help you understand the rules of the game more easily.'
                 buttonText='Test your Knowledge'
                 buttonStyle='dark'
                 reverse={true}

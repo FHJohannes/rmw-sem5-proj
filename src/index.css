@@ -63,4 +63,5 @@ section{
 }
 button{
   cursor: pointer;
+  font-size: var(--size-standard);
 }

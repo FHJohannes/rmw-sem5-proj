@@ -46,19 +46,26 @@ section{
         border-radius: 15px;
     }
     & form{
+        & .stateIcon{
+            width: 30px;
+            height: 30px;
+            justify-self: end;
+        }
         padding: 30px 0;
         & .questionType1{
             display: flex;
             flex-direction: column;
             gap: 13px;
             width: 50vw;
-            max-width: 600px;
+            max-width: 900px;
             & .questionWrapper{
                 display: flex;
                 cursor:pointer;
                 background-color: var(--color-white-green);
                 border-radius: 30px;
                 padding: 15px 20px;
+                line-height: 30px;
+                justify-content: space-between;
             }
         }
         & .questionType2{
@@ -68,7 +75,7 @@ section{
             flex-wrap: wrap;
             gap: 13px;
             width: 50vw;
-            max-width: 600px;
+            max-width: 900px;
             & .questionWrapper{
                 cursor:pointer;
                 background-color: var(--color-white-green);
@@ -83,12 +90,14 @@ section{
             flex-wrap: wrap;
             gap: 13px;
             width: 50vw;
-            max-width: 600px;
+            max-width: 900px;
             & .questionWrapper{
                 cursor:pointer;
                 background-color: var(--color-white-green);
                 border-radius: 30px;
                 padding: 15px 20px;
+                display: flex;
+                gap: 20px;
             }
             & span{
                 padding: 33px 40px;
@@ -102,8 +111,8 @@ section{
             padding-top: 30px;
         }
         .checkboxRound {
-            width: 19px;
-            height: 19px;
+            width: 24px;
+            height: 24px;
             background-color: var(--color-white-green);
             border-radius: 50%;
             vertical-align: middle;

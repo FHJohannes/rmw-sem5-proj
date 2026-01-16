@@ -27,7 +27,7 @@ export const router = createBrowserRouter([
             {
                 path: "rules",
                 children: [
-                    {path: "", element: <Rules/> },
+                    {path: "", element: <Rules anchor="top"/> },
                     {path: "lesson1", element: <Rules anchor="lesson1"/> },
                     {path: "lesson2", element: <Rules anchor="lesson2"/> },
                     {path: "lesson3", element: <Rules anchor="lesson3"/> },

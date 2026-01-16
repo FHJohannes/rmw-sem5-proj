@@ -9,7 +9,7 @@ export function Welcome() {
         <section className={styles.welcomeSection}>
             <div className={styles.welcomeText}>
                 <h1>Willkommen!</h1>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the</p>
+                <p>This little student project will give you the necessary information to learn the basics of riichi mahjong in the form of written rules, quizzes, videos and a little sandbox mode at the end to review everything yourself.</p>
                 <PillButton text="Start Studying" stylemode="medium" onClick={() => {navigate(`/lessons`)}}/>
             </div>
             <img src="/src/assets/images/Header_Dragon.png" alt="A very cool Dragon" />  
