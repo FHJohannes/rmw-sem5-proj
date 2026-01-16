@@ -5,7 +5,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    transition: background-color .25s;
+    transition: background-color 0.3s ease-out;
     font-weight: 600;
 }
 
@@ -13,7 +13,7 @@
     background-color: var(--color-dark-green);
     color: white;
     &:hover{
-        background-color: var(--color-green);
+        background-color: var(--color-dark-green-hover);
         color: white;
     }
 }
@@ -21,7 +21,7 @@
     background-color: var(--color-green);
     color: white;
     &:hover{
-        background-color: var(--color-light-green);
+        background-color: var(--color-green-hover);
         color: white;
     }
 }
@@ -29,7 +29,7 @@
     background-color: var(--color-light-green);
     color: var(--font-color);
     &:hover{
-        background-color: var(--color-white-green);
+        background-color: var(--color-light-green-hover);
         color: var(--font-color);
     }
 }

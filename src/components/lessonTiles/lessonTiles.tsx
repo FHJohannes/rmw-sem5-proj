@@ -31,6 +31,7 @@ export function LessonTiles({cards}: props) {
                                 </div>
                                 <div className={styles.btnContainer}>
                                     <AdjustablePillButton 
+                                        onClick = {() => navigate(`/rules/lesson${card.id}`)}
                                         text={card.startBtn} 
                                         mode={"first"} 
                                         icon={book_icon}
@@ -49,9 +50,9 @@ export function LessonTiles({cards}: props) {
                                     />
                                 </div>
                             </div>
-                            <div className = {styles.picContainer}>
+                            
                                 <img src = {card.img} alt = "Lesson Preview Image"/>
-                            </div>
+                   
                         </div>
                     )
                 })}

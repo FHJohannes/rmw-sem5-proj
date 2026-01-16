@@ -10,6 +10,8 @@
         align-items: flex-start;
         justify-content: space-around;
         width: 40%;
+        height: 40%;
+        gap: 10px;
     }
     & img{
         width: 60%;

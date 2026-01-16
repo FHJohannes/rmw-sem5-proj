@@ -16,9 +16,16 @@
     --font-color: black;
 
     --bg-light-gray: #D9D9D9;
+    --color-white-green: #D6F3E4;
 
     --color-dark-green: #03440C;
+    --color-dark-green-hover: #154D1D;
+    
     --color-green: #016732;
+    --color-green-hover: #2B8054;
+
     --color-light-green: #78BB9D;
-    --color-white-green: #D6F3E4;
+    --color-light-green-hover: #8FC6AD;
+
+    
 }

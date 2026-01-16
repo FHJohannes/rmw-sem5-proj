@@ -1,4 +1,3 @@
-import './landingPage.module.css';
 import { useEffect } from 'react';
 import { Element, scroller } from 'react-scroll';
 import { Welcome } from 'src/components/welcome/Welcome.tsx';
@@ -41,8 +40,8 @@ export function LandingPage({ anchor }:Props) {
                 text='This guide will take you from 0 to basic riichi mahjong knowledge. It will try to explain the rules of riichi mahjong in a comprehensive and understandable way. Every chapter is supported by a little quiz and a video tutorial aswell.'
                 buttonText='Start Reading'
                 buttonStyle='white'
-                imgPath='src/assets/images/i_am_speed.png'
-                stylemode='dark'
+                imgPath='src/assets/images/Lessons.png'
+                stylemode='gradiant'
                 onClick={() => {navigate(`/rules`)}}
                 />
             </Element>
@@ -54,7 +53,7 @@ export function LandingPage({ anchor }:Props) {
                 buttonText='Test your Knowledge'
                 buttonStyle='dark'
                 reverse={true}
-                imgPath='src/assets/images/i_am_speed.png'
+                imgPath='src/assets/images/Quiz.png'
                 stylemode='white'
                 onClick={() => {navigate(`/lessons`)}}
                 />

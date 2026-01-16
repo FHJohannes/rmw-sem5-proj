@@ -25,6 +25,8 @@ function getStyle(type: string):string{
             return styles.dark
         case "white":
             return styles.white
+        case "gradiant":
+            return styles.gradiant
         default:
             return "";
     }

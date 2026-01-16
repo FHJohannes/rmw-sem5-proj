@@ -54,3 +54,6 @@
     background-color: white;
     color: var(--font-color);
 }
+.gradiant {
+    background: linear-gradient(45deg,rgba(255, 255, 255, 1) 0%, rgba(214, 243, 228, 1) 10%, rgba(120, 187, 157, 1) 25%, rgba(1, 103, 50, 1) 64%, rgba(3, 68, 12, 1) 95%);
+}

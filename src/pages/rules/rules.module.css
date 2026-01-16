@@ -1,5 +1,7 @@
 .page{
-    & section{
+    & section .sectionAnchor{
+        display: flex;
+        flex-direction: column;
         align-items: flex-start;
         text-align: left;
         gap: 60px;
@@ -22,14 +24,14 @@
 }
 .rulesNav{
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 75px 75px 75px;
+    display: flex;
+    flex-wrap: wrap;
     gap: 15px;
     & *{
         border-radius: 50px;
         font-size: 20px;
         font-weight: 700;
+        padding: 11px 9px 11px 35px;
     }
 }
 .tileSuit{

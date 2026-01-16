@@ -30,7 +30,7 @@ export function AdjustablePillButton({text, mode, icon, onClick}: props) {
     return (
         <button onClick={onClick} className={[styles.adjustablePillButtonBody, getStyle(mode)].join(" ")}>
             <img src = {icon} alt = '' className={styles.icon}></img>
-            {text}
+            <span>{text}</span>
         </button>
     );
 }
