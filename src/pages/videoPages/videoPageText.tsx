@@ -15,7 +15,7 @@ export const videoPageContent: VideoPageContent[] = [
         videoTitle: "Lesson 1 - Video",
         videoShortDescription: "Watch a short Video for more understanding",
         videoDescription: "Reallife example and overview of all the mahjong tiles!",
-        videoLink: "https://www.youtube.com/embed/7pnzR6kD2Q4?si=-TMxdPao-Wz190Q5",
+        videoLink: "https://youtube.com/embed/22neiKeiLnA?si=wS3MxnAVICDqwdgr",
         testYourKnowledgeBtn: "Test your Knowledge",
         backToLessonsBtn: "Back to lessons"
     },
@@ -24,7 +24,7 @@ export const videoPageContent: VideoPageContent[] = [
         videoTitle: "Lesson 2 - Video",
         videoShortDescription: "Watch a short Video for more understanding",
         videoDescription: "Reallife example and overview of all the mahjong tiles!",
-        videoLink: "https://www.youtube.com/embed/2a-AK_39xg8?si=BC4qfnPD_4FWl-mh",
+        videoLink: "https://youtube.com/embed/-keFtDVFtIg?si=T3JuDQDGmGYkejWG",
         testYourKnowledgeBtn: "Test your Knowledge",
         backToLessonsBtn: "Back to lessons"
     },
@@ -33,7 +33,7 @@ export const videoPageContent: VideoPageContent[] = [
         videoTitle: "Lesson 3 - Video",
         videoShortDescription: "Watch a short Video for more understanding",
         videoDescription: "Reallife example and overview of all the mahjong tiles!",
-        videoLink: "https://www.youtube.com/embed/7pnzR6kD2Q4?si=-TMxdPao-Wz190Q5",
+        videoLink: "https://youtube.com/embed/COSuDyRA6S4?si=cY3KvzCIpaED6fO_",
         testYourKnowledgeBtn: "Test your Knowledge",
         backToLessonsBtn: "Back to lessons"
     },
@@ -42,7 +42,7 @@ export const videoPageContent: VideoPageContent[] = [
         videoTitle: "Lesson 4 - Video",
         videoShortDescription: "Watch a short Video for more understanding",
         videoDescription: "Reallife example and overview of all the mahjong tiles!",
-        videoLink: "https://www.youtube.com/embed/7pnzR6kD2Q4?si=-TMxdPao-Wz190Q5",
+        videoLink: "https://youtube.com/embed/ejTq49dcsQM?si=YfNyWxmK89D35egW",
         testYourKnowledgeBtn: "Test your Knowledge",
         backToLessonsBtn: "Back to lessons"
     },
@@ -50,7 +50,7 @@ export const videoPageContent: VideoPageContent[] = [
         videoTitle: "Lesson 5 - Video",
         videoShortDescription: "Watch a short Video for more understanding",
         videoDescription: "Reallife example and overview of all the mahjong tiles!",
-        videoLink: "https://www.youtube.com/embed/7pnzR6kD2Q4?si=-TMxdPao-Wz190Q5",
+        videoLink: "https://youtube.com/embed/NeOX0q6DPsw?si=YGTg3auuRoOI0-6j",
         testYourKnowledgeBtn: "Test your Knowledge",
         backToLessonsBtn: "Back to lessons"
     },
@@ -59,7 +59,7 @@ export const videoPageContent: VideoPageContent[] = [
         videoTitle: "Lesson 6 - Video",
         videoShortDescription: "Watch a short Video for more understanding",
         videoDescription: "Reallife example and overview of all the mahjong tiles!",
-        videoLink: "https://www.youtube.com/embed/7pnzR6kD2Q4?si=-TMxdPao-Wz190Q5",
+        videoLink: "https://youtube.com/embed/QwPO92AfsY4?si=PLUIglXJ2LnGMu5Q",
         testYourKnowledgeBtn: "Test your Knowledge",
         backToLessonsBtn: "Back to lessons"
     },
