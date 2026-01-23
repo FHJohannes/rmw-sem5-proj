@@ -190,10 +190,9 @@ export const QuizPageContent: quiz[] = [
                 validation: [0],
                 image: useDisplayTiles(useTilesByName(['Sou1','Sou2','Sou3','Sou5','Sou6','Sou7','Pin3','Pin3','Pin3','Man1','Man2','Ton','Ton'])),
                 answers: [
-                    {id: 0, image: useDisplayTiles(useTilesByName(['Man3'])), text: "answer1"},
-                    {id: 1, image: useDisplayTiles(useTilesByName(['Ton'])), text: "answer1"},
+                    {id: 0, image: useDisplayTiles(useTilesByName(['Man3'])), text: "3 of Man"},
+                    {id: 1, image: useDisplayTiles(useTilesByName(['Ton'])), text: ""},
                     {id: 2, image: useDisplayTiles(useTilesByName(['Sou4'])), text: "answer1"},
-                    {id: 3, image: useDisplayTiles(useTilesByName(['Pin3'])), text: "answer1"},
                 ],
             },
             {
@@ -202,8 +201,8 @@ export const QuizPageContent: quiz[] = [
                 type: 1,
                 validation: [0,1],
                 answers: [
-                    {id: 2, text: "Must be 1 Tile away from winning", },
-                    {id: 2, text: "Must be a closed hand", },
+                    {id: 0, text: "Must be 1 Tile away from winning", },
+                    {id: 1, text: "Must be a closed hand", },
                     {id: 2, text: "Must have a Yaku", },
                 ],
             },
